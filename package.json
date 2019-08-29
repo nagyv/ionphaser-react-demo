@@ -1,0 +1,88 @@
+{
+  "name": "ionphaser-react-demo",
+  "engines": {
+    "node": ">=10.15.0",
+    "npm": ">=6.4.1"
+  },
+  "version": "0.0.0",
+  "description": "ionphaser-react-demo",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "standard": "standard",
+    "flow": "flow"
+  },
+  "repository": {},
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {},
+  "homepage": "",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-emotion": "^10.0.16",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint-plugin-flowtype": "^3.6.0",
+    "flow-bin": "^0.96.0",
+    "parcel-bundler": "^1.12.3",
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.4.4",
+    "@ion-phaser/react": "^1.1.2",
+    "phaser": "^3.19.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "browserslist": "> 0.25%, not dead",
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "useBuiltIns": "entry",
+          "corejs": {
+            "version": 3
+          }
+        }
+      ],
+      "@babel/preset-react",
+      "@babel/preset-flow"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime",
+      [
+        "@babel/plugin-proposal-decorators",
+        {
+          "legacy": true
+        }
+      ],
+      [
+        "@babel/plugin-proposal-class-properties",
+        {
+          "loose": true
+        }
+      ],
+      "emotion"
+    ]
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "plugins": [
+      "flowtype"
+    ],
+    "globals": []
+  },
+  "eslintConfig ": {
+    "globals": {}
+  },
+  "alias": {}
+}
